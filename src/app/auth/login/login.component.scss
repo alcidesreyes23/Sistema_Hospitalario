@@ -1,0 +1,61 @@
+.login-container {
+
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+
+    .login-card {
+        width: 800px;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+
+        .login-logo {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .login-body {
+
+            mat-card-title {
+                padding: 1.25rem 0 1.25rem 0;
+            }
+
+            mat-card-content {
+
+                .login-inputs {
+                    display: flex;
+                    flex-direction: column !important;
+
+                    mat-form-field {
+                        ::ng-deep .mat-form-field-wrapper {
+                            margin: 0 0 1rem 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            mat-card-actions {
+            
+                margin: 0;
+                .login-network{
+                    button{
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+}

@@ -1,0 +1,38 @@
+<section class="login-container">
+  <mat-card class="login-card">
+    <div class="login-logo py-10">
+      <img src="/assets/img/logo.png" alt="logo" />
+    </div>
+    <div class="login-body">
+      <mat-card-title class="text-center">Sistema Hospitalario</mat-card-title>
+      <mat-card-content>
+        <div class="login-inputs">
+          <mat-form-field appearance="outline">
+            <mat-label>Correo</mat-label>
+            <input matInput />
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input type="password" matInput />
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions class="login-network text-center">
+        <button style="margin-right: 10px!important" mat-mini-fab color="warn">
+            <em class="fa-brands fa-google"></em>
+          </button>
+          <button mat-mini-fab  color="primary">
+            <em class="fa-brands fa-facebook-f"></em>
+          </button>
+      </mat-card-actions>
+      
+      <mat-card-actions class="text-center login-credentials" style="margin-top: 10px;">
+        <button mat-stroked-button color="basic">Login</button>
+        <button mat-stroked-button color="basic" routerLink="/register">Register</button>
+      </mat-card-actions>
+      <mat-card-footer *ngIf="isLoading">
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+    </div>
+  </mat-card>
+</section>

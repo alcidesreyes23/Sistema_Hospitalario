@@ -1,0 +1,48 @@
+.register-container {
+
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+
+    .register-card {
+        width: 800px;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+
+        .register-body {
+
+            mat-card-title {
+                padding: 1.25rem 0 1.25rem 0;
+            }
+
+            mat-card-content {
+
+                .register-inputs {
+                   
+                    mat-form-field {
+                        ::ng-deep .mat-form-field-wrapper {
+                            margin: 0 0 1rem 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            mat-card-actions {
+            
+                margin: 0;
+                .register-network{
+                    button{
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+}
