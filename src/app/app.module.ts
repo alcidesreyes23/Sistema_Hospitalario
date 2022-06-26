@@ -7,12 +7,14 @@ import { AuthModule } from './auth/auth.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './angular-material/material.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { NotFoundComponent } from './shared/components/not-found/not-found.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    NotFoundComponent
+    
   ],
   imports: [
     BrowserModule,
