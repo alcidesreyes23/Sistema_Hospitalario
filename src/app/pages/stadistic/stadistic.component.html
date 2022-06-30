@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="grid grid-cols-2">
+        <div>
+            <p>Stadistic</p>
+            <app-charts [labels]="labels" [data]="data" [title]="title" ></app-charts>
+        </div>
+        <div>
+            <p class="text-3xl text-purple-700 text-center">Generar Gráfico de Barras.</p>
+            <form [formGroup]="donutForm" (ngSubmit)="crearGrafico()" class="w-full shadow-lg p-10">
+                <div class="grid grid-cols-2 gap-4">
+                    <mat-form-field appearance="outline" class="mt-3 w-100">
+                        <mat-label>Titulo Leyenda 1</mat-label>
+                        <input matInput formControlName="leyenda1">
+                      </mat-form-field>
+                      
+                      <mat-form-field appearance="outline" class="mt-3 w-100">
+                        <mat-label>Cantidad</mat-label>
+                        <input matInput formControlName="cantidad1" type="number">
+                      </mat-form-field>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="grid grid-cols-2 gap-4">
+                    <mat-form-field appearance="outline" class="mt-3 w-100">
+                        <mat-label>Titulo Leyenda 2</mat-label>
+                        <input matInput formControlName="leyenda2">
+                      </mat-form-field>
+                      
+                      <mat-form-field appearance="outline" class="mt-3 w-100">
+                        <mat-label>Cantidad</mat-label>
+                        <input matInput formControlName="cantidad2" type="number">
+                      </mat-form-field>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="grid grid-cols-2 gap-4">
+                    <mat-form-field appearance="outline" class="mt-3 w-100">
+                        <mat-label>Titulo Leyenda 3</mat-label>
+                        <input matInput formControlName="leyenda3">
+                      </mat-form-field>
+                      
+                      <mat-form-field appearance="outline" class="mt-3 w-100">
+                        <mat-label>Cantidad</mat-label>
+                        <input matInput formControlName="cantidad3" type="number">
+                      </mat-form-field>
+                </div>
+                <mat-divider></mat-divider>
+                <button style="
+                    margin-top: 15px!important;"
+                    mat-raised-button color="primary"
+                    [disabled]="this.donutForm.invalid"
+                    type="submit">
+                    Procesar Datos
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

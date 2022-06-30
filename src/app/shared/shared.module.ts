@@ -8,11 +8,12 @@ import { MaterialModule } from '../angular-material/material.module';
 import { RouterModule } from '@angular/router';
 
 
+
 @NgModule({
   declarations: [
     BreadcrumbsComponent,
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
   ],
   imports: [
     CommonModule,
