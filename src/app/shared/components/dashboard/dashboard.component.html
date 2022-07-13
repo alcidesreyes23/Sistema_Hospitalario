@@ -1,8 +1,16 @@
 <mat-sidenav-container>
     <mat-sidenav #sidenav>
       <mat-nav-list class="p-5">
-       <div class="item-navbar">
-        <a (click)="sidenav.toggle()">Test</a>
+       <div class="item-navbar py-12" *ngIf="this.menu">
+        <p class="text-base text-blue-400" >{{this.menu.title}}</p>
+        <a *ngFor="let item of this.menu.subMenu" class="flex items-center mt-3" 
+          (click)="sidenav.toggle()" 
+          [routerLink]="item.url"
+          routerLinkActive="activo"
+          [routerLinkActiveOptions]="{exact:true}">
+          <mat-icon class="mr-2" aria-hidden="false" aria-label="Example home icon">{{item.icon}}</mat-icon>
+          {{item.name}}
+        </a>
        </div>
       </mat-nav-list>
     </mat-sidenav>
@@ -16,6 +24,7 @@
           </button>  
     </mat-toolbar>
     <main class="p-5">
+      <app-breadcrumbs></app-breadcrumbs>
       <router-outlet></router-outlet>
       </main>
       </div>

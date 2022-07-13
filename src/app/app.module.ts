@@ -10,13 +10,11 @@ import { MaterialModule } from './angular-material/material.module';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';;
 import { PageRoutingModule } from './pages/page-routing.module';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent, 
+    NotFoundComponent,
+
   ],
   imports: [
     BrowserModule,
