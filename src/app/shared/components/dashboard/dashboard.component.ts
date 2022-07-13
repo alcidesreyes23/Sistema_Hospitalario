@@ -1,17 +1,12 @@
-<<<<<<< main
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { ItemsDashboardService } from './services/items-dashboard.service';
-=======
-import { Component, OnInit } from '@angular/core';
->>>>>>> testing
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-<<<<<<< main
 export class DashboardComponent implements OnInit, OnDestroy {
 
   menu!:any;
@@ -38,14 +33,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.unsubscribe.complete();
     this.unsubscribe.unsubscribe();
-=======
-export class DashboardComponent implements OnInit {
-
-
-  constructor() { }
-
-  ngOnInit(): void {
->>>>>>> testing
   }
 
 }

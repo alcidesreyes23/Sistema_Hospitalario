@@ -7,24 +7,14 @@ import { AuthModule } from './auth/auth.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './angular-material/material.module';
-<<<<<<< main
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';;
 import { PageRoutingModule } from './pages/page-routing.module';
-=======
-import { NotFoundComponent } from './shared/components/not-found/not-found.component';
-
->>>>>>> testing
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< main
     NotFoundComponent,
 
-=======
-    NotFoundComponent
-    
->>>>>>> testing
   ],
   imports: [
     BrowserModule,
