@@ -7,6 +7,7 @@ import { PromisesComponent } from './promises/promises.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { StadisticComponent } from './stadistic/stadistic.component';
 
+
 const routes: Routes = [
   {
     path:'', 

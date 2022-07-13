@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+<<<<<<< main
 import { PagesRoutingModule } from './page-routing-routing.module';
 import { NgChartsModule } from 'ng2-charts';
 import { ChartsComponent } from './charts/charts.component';
@@ -27,5 +28,16 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     MaterialModule
     
   ],
+=======
+import { PageRoutingRoutingModule } from './page-routing-routing.module';
+
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule,
+    PageRoutingRoutingModule
+  ]
+>>>>>>> testing
 })
 export class PageRoutingModule { }
