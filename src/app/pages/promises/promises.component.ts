@@ -28,7 +28,7 @@ export class PromisesComponent implements OnInit {
   createForm(){
     //const phoneValidation = 
     this.userForm = this.fb.group({
-       phone:[this.phoneNumberValidation(BAD_NUMBER) ? GOOD_NUMBER: BAD_NUMBER,Validators.required],
+       phone:[this.phoneNumberValidation(GOOD_NUMBER) ? GOOD_NUMBER: BAD_NUMBER,Validators.required],
     });
   }
 

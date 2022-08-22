@@ -9,6 +9,7 @@ import { MaterialModule } from '../angular-material/material.module';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromisesComponent } from './promises/promises.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { PhoneNumberMaskDirective } from '../shared/pipes/phone-number-mask.directive';
 
 
 
@@ -19,6 +20,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     AccountSettingsComponent, 
     PromisesComponent,
     RxjsComponent,
+    PhoneNumberMaskDirective
   ],
   imports: [
     CommonModule,
