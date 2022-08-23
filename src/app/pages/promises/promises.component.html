@@ -4,13 +4,13 @@
         <mat-form-field *ngIf="phoneNumberVerifying" appearance="outline">
             <mat-label>Phone Number</mat-label>
             <input matInput  id="tel" phoneMask [preValue]="userForm.value.phone"  
-            [phoneControl]="userForm.controls['phone']" formControlName="phone" maxlength="14" >
+            [phoneControl]="userForm.controls['phone']" [numbersPhoneOnly]="false" formControlName="phone" maxlength="14" >
         </mat-form-field>
         <mat-form-field *ngIf="!phoneNumberVerifying" appearance="outline">
             <mat-label>Phone Number</mat-label>
-            <input matInput formControlName="phone" >
+            <input id="tel" phoneMask [numbersPhoneOnly]="true" [phoneControl]="userForm.controls['phone']" 
+            [preValue]="userForm.value.phone" matInput formControlName="phone" maxlength="16">
         </mat-form-field>
           <button mat-raised-button type="submit" color="primary">Enviar Datos</button>
     </form>
-
 </div>
